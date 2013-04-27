@@ -11,7 +11,7 @@
 ;; Output:
 (= true true)
 
-;; Rationale:
+;; Explanation:
 ;; true equals itself. Clojure does not do implicit boolean conversion.
 ;; (= 1 true) ;false
 ;; (= "true" true) ;false
