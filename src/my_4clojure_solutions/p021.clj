@@ -12,7 +12,7 @@
 ;; (= (__ '([1 2] [3 4] [5 6]) 2) [5 6])
 
 ;; Answer:
-;; '(20 30 40)
+;; 
 
 ;; Output:
 (= ((fn [coll n] (if (zero? n) (first coll) (recur (rest coll) (- n 1)))) '(4 5 6 7) 2) )
