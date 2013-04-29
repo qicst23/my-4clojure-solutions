@@ -33,5 +33,5 @@
 ;; explicitly recursively. But using recur provides tail call
 ;; optimization, and according to the docs, if the recursion is in
 ;; tail position, is encouraged in clojure. That function would look like:
-;; (fn my-nth [coll n] (if (zeron? n) (first coll) (my-nth (rest coll) (-n 1))))
+;; (fn my-nth [coll n] (if (zero? n) (first coll) (my-nth (rest coll) (-n 1))))
 
